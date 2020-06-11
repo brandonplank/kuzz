@@ -1,0 +1,9 @@
+{
+	Filter = {
+		Bundles = (
+			"com.apple.IOAccelerator",
+			"com.apple.IOSurface",
+		);
+		Mode = All;
+	};
+}
