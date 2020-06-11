@@ -1,0 +1,10 @@
+Package: kuzz
+Name: kuzz
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An IOKit fuzzer!
+Maintainer: Brandon Plank
+Author: Brandon Plank
+Section: Kernel
+Version: 0.0.1-1+debug
+Installed-Size: 200
