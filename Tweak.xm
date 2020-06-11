@@ -92,6 +92,10 @@ kern_return_t fake_IOConnectCallMethod(
         NSLog(@"[Kuzz] Not loading kuzz into SpringBoard!");
     } else if ([[[[NSProcessInfo processInfo] arguments] objectAtIndex:0] containsString:@"backboardd"]){
         NSLog(@"[Kuzz] Not loading kuzz into backboardd!");
+    } else if ([[[[NSProcessInfo processInfo] arguments] objectAtIndex:0] containsString:@".app"]){
+        NSLog(@"Not loading into any .app");
+    } else if ([[[[NSProcessInfo processInfo] arguments] objectAtIndex:0] containsString:@"passd"]){
+        NSLog(@"Not loading into passd");
     } else {
         MSHookFunction((int *)&IOConnectCallMethod, (int *)&fake_IOConnectCallMethod, (void **)&old_IOConnectCallMethod);
     }
