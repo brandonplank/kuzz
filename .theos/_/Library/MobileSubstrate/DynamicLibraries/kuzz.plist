@@ -3,6 +3,7 @@
 		Bundles = (
 			"com.apple.IOAccelerator",
 			"com.apple.IOSurface",
+			"com.apple.SpringBoard",
 		);
 		Mode = All;
 	};
